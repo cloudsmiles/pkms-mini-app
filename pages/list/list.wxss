@@ -1,0 +1,32 @@
+/* pages/list/list.wxss */
+.list-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+}
+.poster {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+/* .meta {
+  margin-left: 15rpx;
+  line-height: 30rpx;
+} */
+.title {
+  font-weight: bold;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  color: #999999;
+  margin-top: 5rpx;
+  flex-direction: column;
+}

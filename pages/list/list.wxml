@@ -1,0 +1,16 @@
+<!--pages/list/list.wxml-->
+<view class='container'>
+  <block class='list-body' wx:for='{{partnerList}}' wx:for-index='key'
+  wx:key='key'>
+      <navigator url='../item/item?id={{key}}'>
+        <view class='item'>
+          <image class='poster' src='{{item.picture}}'></image>
+          <view class='meta'>
+            <text class='title'>{{item.title}}</text>
+            <text class='info'>来源：{{item.source}}</text>
+              <text class='info'>定位：{{item.position}}</text>
+          </view>
+        </view>
+      </navigator>
+  </block>
+</view>

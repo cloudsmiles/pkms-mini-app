@@ -1,0 +1,37 @@
+/* pages/item/item.wxss */
+.poster {
+  width: 256rpx;
+  height: 256rpx;
+  margin: 20rpx;
+}
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.first-block {
+  padding: 35rpx 40rpx;
+}
+.second-block {
+  padding: 30rpx 0rpx;
+}
+.first-text {
+  font-size: 42rpx;
+  color: #444;
+}
+.gray-text {
+  font-size: 30rpx;
+  color: #888;
+  margin-top: 20rpx;
+}
+.second-text {
+  display: block;
+  font-size: 38rpx;
+  color: #555;
+}
+.content {
+  color: #666;
+  font-size: 30rpx;
+  /* text-align: justify; */
+  line-height: 3em;
+}
