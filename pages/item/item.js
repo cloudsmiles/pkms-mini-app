@@ -11,8 +11,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var id = options.id
-    var selfData = getApp().globalData.partnerList[id]
+    let id = options.id
+    let selfData = {
+      loading: true
+    }
+    
+    getApp().globalData.partnerList.forEach(function(item, index, array) {
+      if (array[index].id == id) {
+        selfData = array[index]
+      }
+    })
+
     selfData.loading = false
     console.log(selfData)
     this.setData(selfData)

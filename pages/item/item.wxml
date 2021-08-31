@@ -3,22 +3,42 @@
 <!--等待框-->
 <loading hidden="{{!loading}}">加载中...</loading>
 <!--滚动列表-->
-<scroll-view scroll-y="true" wx:if="{{title}}">
+<scroll-view scroll-y="true" wx:if="{{name}}">
   <image class='poster' src='{{picture}}' background-size="cover"></image>
   <view class='first-block meta'>
-    <text class='first-text'>{{title}}</text>
+    <text class='first-text'>{{name}}</text>
     <text class='gray-text'>来源：{{source}}</text>
-    <text class='gray-text'>定位：{{position}}</text>
+    <text class='gray-text'>定位：{{type}}</text>
   </view>
   <view class ="first-block">
     <text class='first-text'>评分细则：</text>
     <view class='second-block'>
-      <text class='second-text'>白值：{{detail.attr.level}}</text>
-      <text class='content'>{{detail.attr.reason}}</text>
+      <text class='second-text'>白值：{{attr.level}}</text>
+      <text class='content'>{{attr.reason}}</text>
     </view>
     <view class='second-block'>
-      <text class='second-text'>技能组：{{detail.skill.level}}</text>
-      <text class='content'>{{detail.skill.reason}}</text>
+      <text class='second-text'>技能组：{{skill.level}}</text>
+      <text class='content'>{{skill.reason}}</text>
+    </view>
+    <view class='second-block'>
+      <text class='second-text'>被动：{{passive.level}}</text>
+      <text class='content'>{{passive.reason}}</text>
+    </view>
+    <view class='second-block'>
+      <text class='second-text'>石盘：{{pale.level}}</text>
+      <text class='content'>{{pale.reason}}</text>
+    </view>
+    <view class='second-block'>
+      <text class='second-text'>专精度：{{focus.level}}</text>
+      <text class='content'>{{skill.reason}}</text>
+    </view>
+    <view class='second-block'>
+      <text class='second-text'>依赖度：{{depend.level}}</text>
+      <text class='content'>{{depend.reason}}</text>
+    </view>
+    <view class='second-block'>
+      <text class='second-text'>通用性：{{common.level}}</text>
+      <text class='content'>{{common.reason}}</text>
     </view>
   </view>
   <view class="first-block">
