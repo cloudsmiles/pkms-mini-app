@@ -7,7 +7,7 @@
           <image class='poster' src='{{item.picture}}'></image>
           <view class='meta'>
             <text class='title'>{{item.name}}</text>
-            <text class='info'>定位：{{item.type}}</text>
+            <text class='info'>定位：{{item.role}}</text>
               <text class='info'>评分：{{item.score}}</text>
           </view>
         </view>

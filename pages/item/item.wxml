@@ -8,13 +8,13 @@
   <view class='first-block meta'>
     <text class='first-text'>{{name}}</text>
     <text class='gray-text'>来源：{{source}}</text>
-    <text class='gray-text'>定位：{{type}}</text>
+    <text class='gray-text'>定位：{{role}}</text>
   </view>
   <view class ="first-block">
     <text class='first-text'>评分细则：</text>
     <view class='second-block'>
-      <text class='second-text'>白值：{{attr.level}}</text>
-      <text class='content'>{{attr.reason}}</text>
+      <text class='second-text'>白值：{{stats.level}}</text>
+      <text class='content'>{{stats.reason}}</text>
     </view>
     <view class='second-block'>
       <text class='second-text'>技能组：{{skill.level}}</text>
@@ -25,12 +25,12 @@
       <text class='content'>{{passive.reason}}</text>
     </view>
     <view class='second-block'>
-      <text class='second-text'>石盘：{{pale.level}}</text>
-      <text class='content'>{{pale.reason}}</text>
+      <text class='second-text'>石盘：{{grid.level}}</text>
+      <text class='content'>{{grid.reason}}</text>
     </view>
     <view class='second-block'>
       <text class='second-text'>专精度：{{focus.level}}</text>
-      <text class='content'>{{skill.reason}}</text>
+      <text class='content'>{{focus.reason}}</text>
     </view>
     <view class='second-block'>
       <text class='second-text'>依赖度：{{depend.level}}</text>
