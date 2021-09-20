@@ -16,14 +16,14 @@ Page({
       loading: true
     }
     
-    getApp().globalData.partnerList.forEach(function(item, index, array) {
+    getApp().globalData.pairList.forEach(function(item, index, array) {
       if (array[index].id == id) {
         selfData = array[index]
       }
     })
 
     selfData.loading = false
-    console.log(selfData)
+    // console.log(selfData)
     this.setData(selfData)
   },
  
