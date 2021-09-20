@@ -12,10 +12,9 @@ Page({
    */
   onLoad: function (options) {
     getApp().globalData.partnerList.forEach(function(item, index, array) {
+      // set default picture
       if (array[index].picture == "" || array[index].picture == undefined) {
         array[index].picture = "https://www.hualigs.cn/image/612e7b56331f6.jpg"
-      } else {
-        array[index].picture = "../../image/icons/" + array[index].picture
       }
     })
     this.setData(getApp().globalData)
