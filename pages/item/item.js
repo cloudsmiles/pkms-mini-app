@@ -11,20 +11,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let id = options.id
+    let id = options.id;
     let selfData = {
       loading: true
-    }
+    };
     
     getApp().globalData.pairList.forEach(function(item, index, array) {
-      if (array[index].id == id) {
+      if (array[index].id === id) {
         selfData = array[index]
       }
-    })
+    });
 
-    selfData.loading = false
+    selfData.loading = false;
     // console.log(selfData)
-    this.setData(selfData)
+    this.setData(selfData);
   },
  
   /**
@@ -32,4 +32,4 @@ Page({
    */
   onReady: function () {
   }
-})
+});
