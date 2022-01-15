@@ -21,18 +21,17 @@
   <!--动态出现的“取消”键 -->
   <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
 </view>
-<view class='list-container'>
-  <block wx:for='{{pairList}}' wx:for-index='key'
-  wx:key='key'>
-      <navigator url='../item/item?id={{item.id}}'>
-        <view class='list-item'>
-          <image class='list-item-poster' src='{{item.picture}}'></image>
-          <view class='list-item-right'>
-            <text class='list-item-right-title'>{{item.name}}</text>
-            <text class='list-item-right-meta'>定位：{{item.role}}</text>
-            <text class='list-item-right-meta'>评分：{{item.score}}</text>
-          </view>
+<scroll-view scroll-y='true' class='list-container' bindscrolltolower="binbottom">
+  <block wx:for='{{pairList}}' wx:for-index='key' wx:key='key'>
+    <navigator url='../item/item?id={{item.id}}'>
+      <view class='list-item'>
+        <image class='list-item-poster' src='{{item.picture}}'></image>
+        <view class='list-item-right'>
+          <text class='list-item-right-title'>{{item.name}}</text>
+          <text class='list-item-right-meta'>定位：{{item.role}}</text>
+          <text class='list-item-right-meta'>评分：{{item.score}}</text>
         </view>
-      </navigator>
+      </view>
+    </navigator>
   </block>
-</view>
+</scroll-view>
