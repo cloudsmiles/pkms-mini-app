@@ -44,23 +44,23 @@ Page({
       inputVal: e.detail.value
     });
   },
-  initData: function () {
+  initData: function() {
     getApp().globalData.pairList.forEach(function (item, index, array) {
       // Set default picture
-      if (array[index].picture == "" || array[index].picture == undefined) {
+      if (array[index].picture === "" || array[index].picture === undefined) {
         array[index].picture = "https://www.hualigs.cn/image/612e7b56331f6.jpg"
       }
-    })
+    });
     this.setData({
       allList: getApp().globalData.pairList,
       pairList: getApp().globalData.pairList.slice(0, 10),
       totalNum: getApp().globalData.pairList.length,
       page: 1,
-    })
+    });
   },
   binbottom:function(e){
     if (this.data.pairList.length === this.data.totalNum) {
-      return 
+      return
     } else{
       //我们重复之前的数据
       let startNum, lastNum
@@ -77,13 +77,13 @@ Page({
       })
     }
   },
-  getList: function (inputValue) {
+   getList: function(inputValue) {
     // 根据输入值匹模糊匹配名称
-    if (inputValue != "" && inputValue != undefined) {
-      let newPairList = []
+    if (inputValue !== "" && inputValue !== undefined) {
+      let newPairList = [];
       for (let pair of getApp().globalData.pairList) {
-        if (pair.name.indexOf(inputValue) != -1) {
-          newPairList.push(pair)
+        if (pair.name.indexOf(inputValue) !== -1) {
+          newPairList.push(pair);
         }
       }
       this.setData({
@@ -91,14 +91,14 @@ Page({
         pairList: newPairList.slice(0, 10),
         totalNum: newPairList.length,
         page: 1,
-      })
+      });
     } else {
       this.setData({
         allList: getApp().globalData.pairList,
         pairList: getApp().globalData.pairList.slice(0, 10),
         totalNum: getApp().globalData.pairList.length,
         page: 1,
-      })
+      });
     }
-  }
-})
+  },
+});
