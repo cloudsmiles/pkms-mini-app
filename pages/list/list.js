@@ -48,7 +48,7 @@ Page({
     getApp().globalData.pairList.forEach(function (item, index, array) {
       // Set default picture
       if (array[index].picture === "" || array[index].picture === undefined) {
-        array[index].picture = "https://www.hualigs.cn/image/612e7b56331f6.jpg"
+        array[index].picture = "https://www.hualigs.cn/image/61f0c0d1abf0e.jpg"
       }
     });
     this.setData({
