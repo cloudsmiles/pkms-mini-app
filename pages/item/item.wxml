@@ -17,7 +17,7 @@
       <text class='content'>{{stats.reason}}</text>
     </view>
     <view class='second-block'>
-      <text class='second-text'>技能组：{{skill.level}}</text>
+      <text class='second-text'>招式组：{{skill.level}}</text>
       <text class='content'>{{skill.reason}}</text>
     </view>
     <view class='second-block'>
