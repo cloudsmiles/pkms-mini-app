@@ -1,6 +1,6 @@
 import {
   out
-} from './resource.js'
+} from './static/resource.js'
 
 // app.js
 App({
